@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "8cb2b1a5-9dcf-4d54-ac4e-51092c344205",
+		"name": "LionsGym",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"jwala\",\r\n    \"lastName\": \"pratap\",\r\n    \"doa\" : \"2022-05-13\",\r\n    \"personalTraiing\": \"true\",\r\n    \"ptName\": \"Mohan\",\r\n    \"plan\": \"3 monts\",\r\n    \"fees\" : 10000,\r\n    \"contactNumber\": \"9993761303\",\r\n    \"refferal\" : \"None\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/lionsgym/gymMembers"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"jwala\",\r\n    \"lastName\": \"pratap\",\r\n    \"doa\" : \"2022-05-13\",\r\n    \"personalTraiing\": \"true\",\r\n    \"ptName\": \"Mohan\",\r\n    \"plan\": \"3 monts\",\r\n    \"fees\" : 10000,\r\n    \"contactNumber\": \"9993761303\",\r\n    \"refferal\" : \"None\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/lionsgym/addMember"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"personalTraiing\": false,\r\n        \"ptName\": \"\",\r\n        \"plan\": \"1 monts\",\r\n        \"fees\": 2000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/lionsgym/updateMember/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/lionsgym/deleteMember/2"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leg press\",\r\n    \"doi\" : \"2022-05-13\",\r\n    \"maintanenceRequired\": \"true\",\r\n    \"cost\": 15000,\r\n    \"providerContactNumber\": \"9893862503\",\r\n    \"deleteInventory\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/lionsgym/addInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/lionsgym/gymInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mohan\",\r\n    \"lastName\": \"singh\",\r\n    \"doe\" : \"2022-05-13\",\r\n    \"professional\": \"trainner\",\r\n    \"salary\": 25000,\r\n    \"contactNumber\": \"7898456321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/lionsgym/addEmployee"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/lionsgym/gymEmployees"
+			},
+			"response": []
+		}
+	]
+}
